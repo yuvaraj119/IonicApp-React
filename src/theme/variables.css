@@ -88,12 +88,20 @@
     --ion-color-status-contrast-rgb: 0, 0, 0;
     --ion-color-status-shade: #6b8f5c;
     --ion-color-status-tint: #87ac78;
+    /** toggle-button **/
     --ion-color-togglebutton: #33b8e3;
     --ion-color-togglebutton-rgb: 51, 184, 227;
     --ion-color-togglebutton-contrast: #000000;
     --ion-color-togglebutton-contrast-rgb: 0, 0, 0;
     --ion-color-togglebutton-shade: #2da2c8;
     --ion-color-togglebutton-tint: #47bfe6;
+    /** patient-col-name **/
+    --ion-color-patient-col-name: #99cdff;
+    --ion-color-patient-col-name-rgb: 153, 205, 255;
+    --ion-color-patient-col-name-contrast: #000000;
+    --ion-color-patient-col-name-contrast-rgb: 0, 0, 0;
+    --ion-color-patient-col-name-shade: #87b4e0;
+    --ion-color-patient-col-name-tint: #a3d2ff;
 }
 
 
@@ -323,4 +331,20 @@
     --ion-color-contrast-rgb: var(--ion-color-togglebutton-contrast-rgb);
     --ion-color-shade: var(--ion-color-togglebutton-shade);
     --ion-color-tint: var(--ion-color-togglebutton-tint);
+}
+
+.ion-color-patient-col-name {
+    --ion-color-base: var(--ion-color-patient-col-name);
+    --ion-color-base-rgb: var(--ion-color-patient-col-name-rgb);
+    --ion-color-contrast: var(--ion-color-patient-col-name-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-patient-col-name-contrast-rgb);
+    --ion-color-shade: var(--ion-color-patient-col-name-shade);
+    --ion-color-tint: var(--ion-color-patient-col-name-tint);
+}
+
+.item-avatar {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
 }

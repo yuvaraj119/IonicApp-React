@@ -1,0 +1,20 @@
+@import "../theme/variables.css";
+.patient-list-item {
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.patient-list-item-name {
+    background-color: var(--ion-color-patient-col-name);
+}
+
+.patient-list-item-heading-text {
+    font-weight: 700;
+}
+
+.text-button {
+    color: black;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}

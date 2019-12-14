@@ -3,9 +3,29 @@ import {
   IonList, IonItem, IonCheckbox, IonLabel, IonNote, IonBadge, IonToggle,
   IonItemGroup, IonItemDivider, IonIcon, IonListHeader
 } from '@ionic/react';
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from '../data/connect';
+import { RouteComponentProps, withRouter } from 'react-router';
+import { setDarkMode } from '../data/user/user.actions';
 
-const Home: React.FC = () => {
+interface Pages {
+  title: string,
+  path: string,
+  icon: { ios: string, md: string },
+  routerDirection?: string
+}
+interface StateProps {
+  darkMode: boolean;
+  isAuthenticated: boolean;
+}
+
+interface DispatchProps {
+  setDarkMode: typeof setDarkMode
+}
+
+interface HomeProps extends RouteComponentProps, StateProps, DispatchProps { }
+
+const Home: React.FC<HomeProps> = ({ darkMode, history, isAuthenticated, setDarkMode }) => {
   return (
     <IonPage>
       <IonHeader>
@@ -14,7 +34,9 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding" scrollEvents={true} scrollY={true}>
-        <IonItem lines="none">
+        <IonItem lines="none" onClick={() => {
+          history.push('/doctordetailspage');
+        }}>
           <IonLabel><h1>Dr. Thomas - Neuro Surgeon</h1></IonLabel>
         </IonItem>
         <IonItem lines="none">

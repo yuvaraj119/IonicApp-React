@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -28,6 +28,8 @@ import { loadConfData } from './data/sessions/sessions.actions';
 import { setIsLoggedIn, setUsername, loadUserData } from './data/user/user.actions';
 import { Session } from "./models/Session";
 
+import DoctorDetailsPage from "./pages/DoctorDetailsPage";
+
 const App: React.FC = () => {
   return (
     <AppContextProvider>
@@ -50,35 +52,31 @@ interface DispatchProps {
 
 interface IonicAppProps extends StateProps, DispatchProps { }
 
-const IonicApp: React.FC<IonicAppProps> = ({ darkMode, sessions, setIsLoggedIn, 
+const IonicApp: React.FC<IonicAppProps> = ({ darkMode, sessions, setIsLoggedIn,
   setUsername, loadConfData, loadUserData }) => {
-  
-    useEffect(() => {
-      loadUserData();
-      loadConfData();
-      // eslint-disable-next-line
-    }, []);
-  
-    return (
-      sessions.length === 0 ? (
-        <div></div>
-      ) : (
-          <IonApp className={`${darkMode ? 'dark-theme' : ''}`}>
-            <IonReactRouter>
-                <IonRouterOutlet id="main">
-                  <Route path="/home" component={Home} />
-                  {/* <Route path="/logout" render={() => {
-                    setIsLoggedIn(false);
-                    setUsername(undefined);
-                    return <Redirect to="/home" />
-                  }} /> */}
-                  <Route exact path="/" render={() => <Redirect to="/home" />} />
-                </IonRouterOutlet>
-            </IonReactRouter>
-          </IonApp>
-        )
-    )
-  }
+
+  useEffect(() => {
+    loadUserData();
+    loadConfData();
+    // eslint-disable-next-line
+  }, []);
+
+  return (
+    sessions.length === 0 ? (
+      <div></div>
+    ) : (
+        <IonApp className={`${darkMode ? 'dark-theme' : ''}`}>
+          <IonReactRouter>
+            <IonRouterOutlet id="main">
+              <Route path="/homepage" component={Home} />
+              <Route path="/doctordetailspage" component={DoctorDetailsPage} />
+              <Route exact path="/" render={() => <Redirect to="/homepage" />} />
+            </IonRouterOutlet>
+          </IonReactRouter>
+        </IonApp>
+      )
+  )
+}
 
 // const App: React.FC = () => (
 //   <IonApp>
