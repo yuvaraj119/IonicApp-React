@@ -102,6 +102,29 @@
     --ion-color-patient-col-name-contrast-rgb: 0, 0, 0;
     --ion-color-patient-col-name-shade: #87b4e0;
     --ion-color-patient-col-name-tint: #a3d2ff;
+    /** accordanceheading **/
+    --ion-color-accordanceheading: #54a5c3;
+    --ion-color-accordanceheading-rgb: 84, 165, 195;
+    --ion-color-accordanceheading-contrast: #000000;
+    --ion-color-accordanceheading-contrast-rgb: 0, 0, 0;
+    --ion-color-accordanceheading-shade: #4a91ac;
+    --ion-color-accordanceheading-tint: #65aec9;
+    /** accordanceheadingbg **/
+    --ion-color-accordanceheadingbg: #333333;
+    --ion-color-accordanceheadingbg-rgb: 51, 51, 51;
+    --ion-color-accordanceheadingbg-contrast: #ffffff;
+    --ion-color-accordanceheadingbg-contrast-rgb: 255, 255, 255;
+    --ion-color-accordanceheadingbg-shade: #2d2d2d;
+    --ion-color-accordanceheadingbg-tint: #474747;
+    /** accordancecardtime **/
+    --ion-color-accordancecardtime: #792d39;
+    --ion-color-accordancecardtime-rgb: 121, 45, 57;
+    --ion-color-accordancecardtime-contrast: #ffffff;
+    --ion-color-accordancecardtime-contrast-rgb: 255, 255, 255;
+    --ion-color-accordancecardtime-shade: #6a2832;
+    --ion-color-accordancecardtime-tint: #86424d;
+    --ion-color-fastassesmentitem: #666666;
+    --ion-color-fastassesmentwhite: #FFFFFF;
 }
 
 
@@ -347,4 +370,31 @@
     height: 100% !important;
     max-width: 30px !important;
     max-height: 30px !important;
+}
+
+.ion-color-accordanceheading {
+    --ion-color-base: var(--ion-color-accordanceheading);
+    --ion-color-base-rgb: var(--ion-color-accordanceheading-rgb);
+    --ion-color-contrast: var(--ion-color-accordanceheading-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-accordanceheading-contrast-rgb);
+    --ion-color-shade: var(--ion-color-accordanceheading-shade);
+    --ion-color-tint: var(--ion-color-accordanceheading-tint);
+}
+
+.ion-color-accordanceheadingbg {
+    --ion-color-base: var(--ion-color-accordanceheadingbg);
+    --ion-color-base-rgb: var(--ion-color-accordanceheadingbg-rgb);
+    --ion-color-contrast: var(--ion-color-accordanceheadingbg-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-accordanceheadingbg-contrast-rgb);
+    --ion-color-shade: var(--ion-color-accordanceheadingbg-shade);
+    --ion-color-tint: var(--ion-color-accordanceheadingbg-tint);
+}
+
+.ion-color-accordancecardtime {
+    --ion-color-base: var(--ion-color-accordancecardtime);
+    --ion-color-base-rgb: var(--ion-color-accordancecardtime-rgb);
+    --ion-color-contrast: var(--ion-color-accordancecardtime-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-accordancecardtime-contrast-rgb);
+    --ion-color-shade: var(--ion-color-accordancecardtime-shade);
+    --ion-color-tint: var(--ion-color-accordancecardtime-tint);
 }

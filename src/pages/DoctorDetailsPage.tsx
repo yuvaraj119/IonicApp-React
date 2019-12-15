@@ -1,26 +1,26 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router';
-import { IonReactRouter } from '@ionic/react-router';
-import { IonHeader, IonRouterOutlet, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonBackButton, IonList, IonGrid, IonRow, IonCol, IonItem, IonLabel, IonToggle } from '@ionic/react';
-import PatientListPage from './PatientListPage';
-import PatientDetailsPage from './PatientDetailsPage';
+import { IonHeader, IonToolbar, IonContent, IonPage, IonButtons, IonBackButton, IonList, IonGrid, IonRow, IonCol, IonItem, IonLabel, IonToggle } from '@ionic/react';
 import { Speaker } from '../models/Speaker';
-import { Session } from '../models/Session';
 import { connect } from '../data/connect';
+import { RouteComponentProps } from 'react-router';
 import * as selectors from '../data/selectors';
-import './Details.scss';
+import PatientItem from '../components/PatientItem';
 
-interface OwnProps { };
+interface OwnProps extends RouteComponentProps { };
 
 interface StateProps {
-  speakers: Speaker[];
+  patients: Speaker[];
 };
 
 interface DispatchProps { };
 
 interface DoctorDetailsProps extends OwnProps, StateProps, DispatchProps { };
 
-const DoctorDetailsPage: React.FC<DoctorDetailsProps> = ({ speakers }) => {
+const DoctorDetailsPage: React.FC<DoctorDetailsProps> = ({ history, patients }) => {
+
+  var moveToAnotherScreen = (patientId: number): void => {
+    history.push(`/patientdetailspage/${patientId}`)
+  }
 
   return (
     <IonPage id="doctor-details">
@@ -29,29 +29,43 @@ const DoctorDetailsPage: React.FC<DoctorDetailsProps> = ({ speakers }) => {
           <IonButtons slot="start">
             <IonBackButton defaultHref="/homepage"></IonBackButton>
           </IonButtons>
-          <IonTitle>Dr. Thomas - Neuro Surgeon</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent id="online-content" className="details-online-content">
         <IonItem lines="none">
+          <IonLabel><h1>Dr. Thomas - Neuro Surgeon</h1></IonLabel>
+        </IonItem>
+        <IonItem lines="none">
           <IonLabel color="status"><h1>Online</h1></IonLabel>
           <IonToggle slot="end" value="pepperoni" color="togglebutton" onChange={() => { }} />
         </IonItem>
+        <IonList>
+          <IonGrid>
+            <IonRow class="ion-justify-content-evenly">
+              <IonCol className={["ion-padding", "patient-list-item", "ion-text-center", "patient-list-item-name"].join(" ")} >
+                <h3 className="patient-list-item-heading-text">Patient Name</h3>
+              </IonCol>
+              <IonCol className={["ion-padding", "patient-list-item", "ion-text-center", "code-list-item-name"].join(" ")}>
+                <h3 className="patient-list-item-heading-text">Code</h3>
+              </IonCol>
+            </IonRow>
+            {patients.map(item => (
+              <PatientItem
+                key={item.id}
+                patient={item}
+                onPressCallBack={moveToAnotherScreen}
+              />
+            ))}
+          </IonGrid>
+        </IonList>
       </IonContent>
-      <IonReactRouter>
-        <IonRouterOutlet id="patient-route-outlet" className="details-router-outletion-below-online-content">
-          <Route path="/doctordetailspage/patientlist/:id" component={PatientDetailsPage} exact={true} />
-          <Route path="/doctordetailspage/patientlist" component={PatientListPage} exact={true} />
-          <Route exact path="/doctordetailspage" render={() => <Redirect to="/doctordetailspage/patientlist" />} />
-        </IonRouterOutlet>
-      </IonReactRouter>
     </IonPage>
   );
 };
 
 export default connect<OwnProps, StateProps, DispatchProps>({
   mapStateToProps: (state) => ({
-    speakers: selectors.getSpeakers(state),
+    patients: selectors.getSpeakers(state),
   }),
-  component: React.memo(DoctorDetailsPage)
+  component: DoctorDetailsPage
 });

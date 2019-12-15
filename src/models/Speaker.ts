@@ -1,3 +1,5 @@
+import { Data } from './Data';
+
 export interface Speaker {
   id: number;
   name: string;
@@ -7,4 +9,5 @@ export interface Speaker {
   location: string;
   email: string;
   phone: string;
+  items: Data[];
 }

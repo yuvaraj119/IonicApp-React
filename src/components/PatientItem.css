@@ -2,6 +2,7 @@
 .patient-list-item {
     outline-style: solid;
     outline-width: thin;
+    outline-color: black;
 }
 
 .patient-list-item-name {
@@ -10,6 +11,20 @@
 
 .patient-list-item-heading-text {
     font-weight: 700;
+    color: black;
+}
+
+.code-list-item-name {
+    background-color: white;
+}
+
+.accordian-card {
+    box-shadow: none !important;
+    border-radius: 0%;
+}
+
+.accordian-card-time {
+    margin-left: 10px;
 }
 
 .text-button {
@@ -17,4 +32,44 @@
     border-radius: 0;
     width: 100%;
     height: 100%;
+}
+
+.region-affected-item-card {
+    justify-content: center !important;
+    display: grid !important;
+}
+
+.region-affected-item-image {
+    width: auto !important;
+    height: 100% !important;
+    max-width: auto !important;
+    max-height: 300px !important;
+    align-items: center !important;
+}
+
+.fast-assessment-col-left {
+    background-color: var(--ion-color-fastassesmentitem);
+}
+
+.fast-assessment-col-right {
+    background-color: black;
+}
+
+.ion-text-left.fast-assessment-col-left.md.hydrated {
+    color: white;
+}
+
+.ion-text-left.fast-assessment-col-right.md.hydrated {
+    color: white;
+}
+
+.rankingscale-button-text {
+    text-transform: none;
+}
+
+.ion-checkbox.radiology {
+    --checkmark-color: var(--ion-color-accordanceheading);
+    --background-checked: transparent;
+    --border-color: white;
+    --border-color-checked: transparent;
 }

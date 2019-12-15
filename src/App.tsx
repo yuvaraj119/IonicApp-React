@@ -29,6 +29,7 @@ import { setIsLoggedIn, setUsername, loadUserData } from './data/user/user.actio
 import { Session } from "./models/Session";
 
 import DoctorDetailsPage from "./pages/DoctorDetailsPage";
+import PatientDetailsPage from "./pages/PatientDetailsPage";
 
 const App: React.FC = () => {
   return (
@@ -65,11 +66,12 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, sessions, setIsLoggedIn,
     sessions.length === 0 ? (
       <div></div>
     ) : (
-        <IonApp className={`${darkMode ? 'dark-theme' : ''}`}>
+        <IonApp className={`${darkMode ? 'dark-theme' : 'dark-theme'}`}>
           <IonReactRouter>
             <IonRouterOutlet id="main">
               <Route path="/homepage" component={Home} />
               <Route path="/doctordetailspage" component={DoctorDetailsPage} />
+              <Route path="/patientdetailspage/:id" component={PatientDetailsPage} />
               <Route exact path="/" render={() => <Redirect to="/homepage" />} />
             </IonRouterOutlet>
           </IonReactRouter>

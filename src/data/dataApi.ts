@@ -2,6 +2,7 @@ import { Plugins } from '@capacitor/core';
 import { Session } from '../models/Session';
 import { Speaker } from '../models/Speaker';
 import { Location } from '../models/Location';
+import { Data } from '../models/Data';
 
 const { Storage } = Plugins;
 
