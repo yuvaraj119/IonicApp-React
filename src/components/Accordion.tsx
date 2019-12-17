@@ -11,13 +11,12 @@ import SendPatientRadiologyItem from './SendPatientRadiologyItem';
 import './PatientItem.css';
 
 interface AccordianProps {
-    data: string;
-    title: string;
+    data: any;
 }
 
 interface AccordianProps { };
 
-const Accordian: React.FC<AccordianProps> = ({ title, data }) => {
+const Accordian: React.FC<AccordianProps> = ({ data }) => {
 
     const [expanded, setExpanded] = useState(false);
 
@@ -25,11 +24,12 @@ const Accordian: React.FC<AccordianProps> = ({ title, data }) => {
         setExpanded(!expanded);
     };
 
-    const getView = (type: string, data: string) => {
+    const getView = (data: any) => {
+        let type = data.type as string
         switch (type) {
             case "Symptoms": return <Symptoms data={data} vitalsign={false} patientTransferTime={false} />
             case "Region Affected": return <RegionAffectedItem data={data} />
-            case "Fast Assessment": return <FastAssesmentItem data={type} />
+            case "Fast Assessment": return <FastAssesmentItem data={data} />
             case "NIHSS": return <NihssItem data={data} />
             case "Vital Signs": return <Symptoms data={data} vitalsign={true} patientTransferTime={false} />
             case "Patient Image": return <PatientImageItem data={data} />
@@ -41,15 +41,19 @@ const Accordian: React.FC<AccordianProps> = ({ title, data }) => {
         }
     }
 
+    const getType = (data: any) => {
+        return data.type as string;
+    }
+
     return (
         <IonCard className="accordian-card">
             <IonCardSubtitle color="accordancecardtime" className="accordian-card-time">12:15 Am</IonCardSubtitle>
             <IonItem color="accordanceheadingbg" onClick={() => toggleExpand()} lines='none'>
-                <IonLabel color="accordanceheading">{title}</IonLabel>
+                <IonLabel color="accordanceheading">{getType(data)}</IonLabel>
                 <IonIcon icon={expanded ? arrowDropupCircle : arrowDropdownCircle} color="accordanceheading" />
             </IonItem>
             {
-                expanded && getView(title, data)
+                expanded && getView(data)
             }
         </IonCard>
     );

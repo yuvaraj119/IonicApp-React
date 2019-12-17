@@ -1,13 +1,14 @@
-import { Data } from './Data';
-
 export interface Speaker {
   id: number;
   name: string;
+  code: string;
+  sex: string;
+  age: number;
   profilePic: string;
   twitter: string;
   about: string;
   location: string;
   email: string;
   phone: string;
-  items: Data[];
+  patientInfo: Array<any>;
 }

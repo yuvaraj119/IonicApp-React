@@ -65,7 +65,7 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
             data: 'A dessert is typically the sweet course that concludes a meal in the culture of many countries, particularly Western culture. The course usually consists of sweet foods, but may include other items. The word "dessert" originated from the French word desservir "to clear the table" and the negative of the Latin word servire'
         });
 
-    const [items, setItems] = useState(menu)
+    const [items] = useState(menu)
 
     if (!patient) {
         return <div>Patient details not found</div>
@@ -80,7 +80,7 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
                 </IonToolbar>
             </IonHeader>
             <IonContent id="patient-content">
-                <IonGrid>
+                <IonGrid className="patient-info">
                     <IonRow class="ion-justify-content-evenly">
                         <IonCol size="6" size-sm className={["ion-padding", "ion-text-start"].join(" ")} >
                             <IonLabel>Patient</IonLabel>
@@ -91,18 +91,17 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
                     </IonRow>
                     <IonRow class="ion-justify-content-evenly">
                         <IonCol size="6" size-sm className={["ion-padding", "ion-text-start"].join(" ")} >
-                            <IonLabel>Sex : {"Male"}</IonLabel>
+                            <IonLabel>Sex : {patient.sex}</IonLabel>
                         </IonCol>
                         <IonCol size="6" size-sm className={["ion-padding", "ion-text-end"].join(" ")}>
-                            <IonLabel>Age : {patient.id}</IonLabel>
+                            <IonLabel>Age : {patient.age}</IonLabel>
                         </IonCol>
                     </IonRow>
                 </IonGrid>
                 <IonList>
-                    {items.map(item => (
+                    {patient.patientInfo.map(item => (
                         <Accordian
-                            title={item.title}
-                            data={item.data} />
+                            data={item} />
                     ))}
                 </IonList>
             </IonContent>

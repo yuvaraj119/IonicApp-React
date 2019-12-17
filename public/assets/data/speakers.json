@@ -1,170 +1,1311 @@
 [{
-    "id": 1,
-    "name": "Burt Bear",
-    "profilePic": "/assets/img/speakers/bear.jpg",
-    "twitter": "ionicframework",
-    "about": "Burt is a Bear.",
-    "location": "Everywhere",
-    "email": "burt@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Bear"
-    }]
-}, {
-    "id": 2,
-    "name": "Charlie Cheetah",
-    "profilePic": "/assets/img/speakers/cheetah.jpg",
-    "twitter": "ionicframework",
-    "about": "Charlie is a Cheetah.",
-    "location": "Everywhere",
-    "email": "charlie@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Cheetah"
-    }]
-}, {
-    "id": 3,
-    "name": "Donald Duck",
-    "profilePic": "/assets/img/speakers/duck.jpg",
-    "twitter": "ionicframework",
-    "about": "Donald is a Duck.",
-    "location": "Everywhere",
-    "email": "donald@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Duck"
-    }]
-}, {
-    "id": 4,
-    "name": "Eva Eagle",
-    "profilePic": "/assets/img/speakers/eagle.jpg",
-    "twitter": "ionicframework",
-    "about": "Eva is an Eagle.",
-    "location": "Everywhere",
-    "email": "eva@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Eagle"
-    }]
-}, {
-    "id": 5,
-    "name": "Ellie Elephant",
-    "profilePic": "/assets/img/speakers/elephant.jpg",
-    "twitter": "ionicframework",
-    "about": "Ellie is an Elephant.",
-    "location": "Everywhere",
-    "email": "ellie@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Elephant"
-    }]
-}, {
-    "id": 6,
-    "name": "Gino Giraffe",
-    "profilePic": "/assets/img/speakers/giraffe.jpg",
-    "twitter": "ionicframework",
-    "about": "Gino is a Giraffe.",
-    "location": "Everywhere",
-    "email": "gino@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Giraffe"
-    }]
-}, {
-    "id": 7,
-    "name": "Isabella Iguana",
-    "profilePic": "/assets/img/speakers/iguana.jpg",
-    "twitter": "ionicframework",
-    "about": "Isabella is an Iguana.",
-    "location": "Everywhere",
-    "email": "isabella@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Iguana"
-    }]
-}, {
-    "id": 8,
-    "name": "Karl Kitten",
-    "profilePic": "/assets/img/speakers/kitten.jpg",
-    "twitter": "ionicframework",
-    "about": "Karl is a Kitten.",
-    "location": "Everywhere",
-    "email": "karl@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Kitten"
-    }]
-}, {
-    "id": 9,
-    "name": "Lionel Lion",
-    "profilePic": "/assets/img/speakers/lion.jpg",
-    "twitter": "ionicframework",
-    "about": "Lionel is a Lion.",
-    "location": "Everywhere",
-    "email": "lionel@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Lion"
-    }]
-}, {
-    "id": 10,
-    "name": "Molly Mouse",
-    "profilePic": "/assets/img/speakers/mouse.jpg",
-    "twitter": "ionicframework",
-    "about": "Molly is a Mouse.",
-    "location": "Everywhere",
-    "email": "molly@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Mouse"
-    }]
-}, {
-    "id": 11,
-    "name": "Paul Puppy",
-    "profilePic": "/assets/img/speakers/puppy.jpg",
-    "twitter": "ionicframework",
-    "about": "Paul is a Puppy.",
-    "location": "Everywhere",
-    "email": "paul@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Puppy"
-    }]
-}, {
-    "id": 12,
-    "name": "Rachel Rabbit",
-    "profilePic": "/assets/img/speakers/rabbit.jpg",
-    "twitter": "ionicframework",
-    "about": "Rachel is a Rabbit.",
-    "location": "Everywhere",
-    "email": "rachel@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Rabbit"
-    }]
-}, {
-    "id": 13,
-    "name": "Ted Turtle",
-    "profilePic": "/assets/img/speakers/turtle.jpg",
-    "twitter": "ionicframework",
-    "about": "Ted is a Turtle.",
-    "location": "Everywhere",
-    "email": "ted@example.com",
-    "phone": "+1-541-754-3010",
-    "data": [{
-        "title": "Group 1",
-        "name": "Burt Turtle"
-    }]
-}]
+        "id": 1,
+        "name": "John Samson",
+        "sex": "Male",
+        "age": 57,
+        "profilePic": "/assets/img/speakers/bear.jpg",
+        "twitter": "ionicframework",
+        "about": "Burt is a Bear.",
+        "location": "Everywhere",
+        "email": "burt@example.com",
+        "phone": "+1-541-754-3010",
+        "code": "Red",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "20"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Paul Victor",
+        "code": "Red",
+        "sex": "Male",
+        "age": 24,
+        "profilePic": "/assets/img/speakers/cheetah.jpg",
+        "twitter": "ionicframework",
+        "about": "Charlie is a Cheetah.",
+        "location": "Everywhere",
+        "email": "charlie@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://www.completemovement.co.uk/wp-content/uploads/2017/03/neck-pain.png"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Dave",
+        "code": "Green",
+        "sex": "Male",
+        "age": 17,
+        "profilePic": "/assets/img/speakers/duck.jpg",
+        "twitter": "ionicframework",
+        "about": "Donald is a Duck.",
+        "location": "Everywhere",
+        "email": "donald@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "John Jhonson",
+        "code": "Red",
+        "sex": "Male",
+        "age": 42,
+        "profilePic": "/assets/img/speakers/eagle.jpg",
+        "twitter": "ionicframework",
+        "about": "Eva is an Eagle.",
+        "location": "Everywhere",
+        "email": "eva@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Ellie Rahana",
+        "code": "Green",
+        "sex": "Female",
+        "age": 37,
+        "profilePic": "/assets/img/speakers/elephant.jpg",
+        "twitter": "ionicframework",
+        "about": "Ellie is an Elephant.",
+        "location": "Everywhere",
+        "email": "ellie@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Gino",
+        "code": "Red",
+        "sex": "Male",
+        "age": 57,
+        "profilePic": "/assets/img/speakers/giraffe.jpg",
+        "twitter": "ionicframework",
+        "about": "Gino is a Giraffe.",
+        "location": "Everywhere",
+        "email": "gino@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Isabella",
+        "code": "Red",
+        "sex": "Female",
+        "age": 22,
+        "profilePic": "/assets/img/speakers/iguana.jpg",
+        "twitter": "ionicframework",
+        "about": "Isabella is an Iguana.",
+        "location": "Everywhere",
+        "email": "isabella@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Karli",
+        "code": "Green",
+        "sex": "Male",
+        "age": 47,
+        "profilePic": "/assets/img/speakers/kitten.jpg",
+        "twitter": "ionicframework",
+        "about": "Karl is a Kitten.",
+        "location": "Everywhere",
+        "email": "karl@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Lionel Messi",
+        "code": "Red",
+        "sex": "Male",
+        "age": 37,
+        "profilePic": "/assets/img/speakers/lion.jpg",
+        "twitter": "ionicframework",
+        "about": "Lionel is a Lion.",
+        "location": "Everywhere",
+        "email": "lionel@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Molly Sophia",
+        "code": "Red",
+        "sex": "Male",
+        "age": 27,
+        "profilePic": "/assets/img/speakers/mouse.jpg",
+        "twitter": "ionicframework",
+        "about": "Molly is a Mouse.",
+        "location": "Everywhere",
+        "email": "molly@example.com",
+        "phone": "+1-541-754-3010",
+        "patientInfo": [{
+                "type": "Symptoms",
+                "data": [{
+                        "data": "Complete Paralysis of one side"
+                    },
+                    {
+                        "data": "Confusion"
+                    },
+                    {
+                        "data": "Bluring of visior"
+                    }
+                ]
+            },
+            {
+                "type": "Region Affected",
+                "data": [{
+                    "picture": "/assets/img/speakers/cheetah.jpg"
+                }]
+            }, {
+                "type": "Fast Assessment",
+                "data": [{
+                        "title": "Facial Movement",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "Arm Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Leg Monitor Function",
+                        "data": "Falls"
+                    },
+                    {
+                        "title": "Speech",
+                        "data": "Minor"
+                    },
+                    {
+                        "title": "In Attention",
+                        "data": "Mild"
+                    },
+                    {
+                        "title": "Gaze",
+                        "data": "Partial"
+                    },
+                    {
+                        "title": "Sensory Loss",
+                        "data": "Patial"
+                    },
+                    {
+                        "title": "Orientation Question - 2",
+                        "data": "1 Answers"
+                    },
+                    {
+                        "title": "Response to commands",
+                        "data": "1 Response"
+                    }
+                ]
+            },
+            {
+                "type": "NIHSS",
+                "data": "NIHS Score: 17",
+                "score": "17"
+            }, {
+                "type": "Vital Signs",
+                "data": [{
+                        "data": "Left systonic blood pressure"
+                    },
+                    {
+                        "data": "Left diastolic blood pressure"
+                    },
+                    {
+                        "data": "Right systonic blood pressure"
+                    },
+                    {
+                        "data": "Right diastolic blood pressure"
+                    }
+                ]
+            }, {
+                "type": "Patient Image",
+                "data": [{
+                        "title": "Sever Pain in Head",
+                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
+                    },
+                    {
+                        "title": "Sever Paing in Neck",
+                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
+                    },
+                    {
+                        "title": "Back Pain",
+                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
+                    }
+                ]
+            }, {
+                "type": "Ranking Scale",
+                "data": []
+            }, {
+                "type": "Send Patient to Radiology",
+                "data": [{
+                        "data": "Request CT"
+                    },
+                    {
+                        "data": "Request MRI"
+                    }
+                ]
+            }, {
+                "type": "Request Lab Test Results",
+                "data": []
+            }, {
+                "type": "Patient Tranfer Timeline",
+                "data": [{
+                        "data": "Patient Transfer Initiated : 10:20 AM"
+                    },
+                    {
+                        "data": "Patient Transfer to OR 8 : 10:30 AM"
+                    }
+                ]
+            }
+        ]
+    }
+]

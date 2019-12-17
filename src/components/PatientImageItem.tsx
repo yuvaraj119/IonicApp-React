@@ -1,58 +1,45 @@
 import React, { useState } from 'react';
 import { IonLabel, IonItem, IonCard, IonList, IonThumbnail, IonImg, IonButton } from '@ionic/react';
 import './PatientItem.css';
+import { PatientImageModel } from '../models/PatientImageModel';
 
 interface PatientImageItemProps {
-    data: string;
+    data: any;
 }
 
 interface PatientImageItemProps { };
 
 const PatientImageItem: React.FC<PatientImageItemProps> = ({ data }) => {
 
-    const menu: Array<{ title: string, url: string }> = Array(
-        {
-            title: 'Symptoms',
-            url: 'http://placekitten.com/g/200/300'
-        },
-        {
-            title: 'Pizzas',
-            url: 'http://placekitten.com/g/200/300'
-        },
-        {
-            title: 'Drinks',
-            url: 'http://placekitten.com/g/200/300'
-        },
-        {
-            title: 'Deserts',
-            url: 'http://placekitten.com/g/200/300'
-        });
-
-    const [imageArray, setImageArray] = useState(menu)
     const [showAll, setShowAll] = useState(false);
 
     const toggleShowHide = () => {
         setShowAll(!showAll);
     };
 
+    const getData = (json: any): Array<PatientImageModel> => {
+        var title: Array<PatientImageModel> = json.data
+        return title;
+    }
+
     return (
         <IonCard className="accordian-card">
             <IonItem lines="none">
-                <IonButton size="small" fill="clear" slot="start" onClick={() => toggleShowHide()}>Show all</IonButton>
-                <IonButton size="small" fill="clear" slot="end" onClick={() => toggleShowHide()}>Hide</IonButton>
+                <IonButton hidden size="small" fill="clear" slot="start"></IonButton>
+                <IonButton size="small" fill="clear" slot="end" onClick={() => toggleShowHide()}>{showAll?"Hide":"Show all"}</IonButton>
             </IonItem>
             {
                 !showAll &&
                 <IonItem>
                     <IonThumbnail slot="start">
-                        <IonImg src={imageArray[0].url} />
+                        <IonImg src={getData(data)[0].url} />
                     </IonThumbnail>
-                    <IonLabel>{imageArray[0].title}</IonLabel>
+                    <IonLabel>{getData(data)[0].title}</IonLabel>
                 </IonItem>
             }
             {showAll &&
                 <IonList>
-                    {imageArray.map((image, i) => (
+                    {getData(data).map((image, i) => (
                         <IonItem key={i}>
                             <IonThumbnail slot="start">
                                 <IonImg src={image.url} />

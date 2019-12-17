@@ -73,3 +73,26 @@
     --border-color: white;
     --border-color-checked: transparent;
 }
+
+.custom-icon {
+    background-color: red;
+    background: red;
+}
+
+.ion-radio-button-red {
+    background-color: red;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.ion-radio-button-green {
+    background-color: greenyellow;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.patient-info {
+    background-color: var(--ion-toolbar-background);
+}

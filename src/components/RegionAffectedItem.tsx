@@ -4,7 +4,7 @@ import './PatientItem.css';
 
 
 interface RegionAffectedItemProps {
-    data: string;
+    data: any;
 }
 
 interface RegionAffectedItemProps { };
@@ -12,7 +12,7 @@ interface RegionAffectedItemProps { };
 const RegionAffectedItem: React.FC<RegionAffectedItemProps> = ({ data }) => {
 
     return (
-        <IonItem lines='none' className={["region-affected-item-card"].join(" ")}>
+        <IonItem lines='none' className={["region-affected-item-card","ion-padding"].join(" ")}>
             <IonImg className={["region-affected-item-image"].join(" ")} src={process.env.PUBLIC_URL + "/assets/img/human.jpg"} />
         </IonItem>
     );
