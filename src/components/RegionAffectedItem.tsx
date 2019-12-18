@@ -1,6 +1,7 @@
 import React from 'react';
 import { IonItem, IonImg } from '@ionic/react';
 import './PatientItem.css';
+import { RegionAffectedModel } from '../models/RegionAffectedModel';
 
 
 interface RegionAffectedItemProps {
@@ -11,9 +12,14 @@ interface RegionAffectedItemProps { };
 
 const RegionAffectedItem: React.FC<RegionAffectedItemProps> = ({ data }) => {
 
+    const getData = (json: any) => {
+        var title: Array<RegionAffectedModel> = json.data
+        return title;
+    }
+
     return (
-        <IonItem lines='none' className={["region-affected-item-card","ion-padding"].join(" ")}>
-            <IonImg className={["region-affected-item-image"].join(" ")} src={process.env.PUBLIC_URL + "/assets/img/human.jpg"} />
+        <IonItem lines='none' text-center className={["ion-padding"].join(" ")}>
+            <IonImg className={["region-affected-image"].join(" ")} src={getData(data)[0].picture} />
         </IonItem>
     );
 };

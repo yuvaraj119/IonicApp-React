@@ -34,17 +34,9 @@
     height: 100%;
 }
 
-.region-affected-item-card {
-    justify-content: center !important;
-    display: grid !important;
-}
-
-.region-affected-item-image {
-    width: auto !important;
-    height: 100% !important;
-    max-width: auto !important;
-    max-height: 300px !important;
-    align-items: center !important;
+.region-affected-image {
+    width: 200px;
+    height: 300px;
 }
 
 .fast-assessment-col-left {
@@ -95,4 +87,16 @@
 
 .patient-info {
     background-color: var(--ion-toolbar-background);
+}
+
+.rankingscale-image {
+    font-size: 30px;
+}
+
+.sendpatient-radiology-image {
+    font-size: 20px;
+}
+
+.content-with-full-width {
+    width: 100%;
 }

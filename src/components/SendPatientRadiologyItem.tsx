@@ -1,45 +1,28 @@
-import React, { useState } from 'react';
-import { IonLabel, IonItem, IonCheckbox, IonList, IonButton } from '@ionic/react';
+import React from 'react';
+import { IonLabel, IonItem, IonList, IonIcon } from '@ionic/react';
 import './PatientItem.css';
+import { checkmark } from 'ionicons/icons';
+import {SymptomsModel} from '../models/SymptomsModel';
 
 interface SendPatientRadiologyItemProps {
-    data: string;
+    data: any;
 }
 
 interface SendPatientRadiologyItemProps { };
 
 const SendPatientRadiologyItem: React.FC<SendPatientRadiologyItemProps> = ({ data }) => {
 
-    const menu: Array<{ title: string, url: string, checked: boolean }> = Array(
-        {
-            title: 'Symptoms',
-            url: 'http://placekitten.com/g/200/300',
-            checked: true
-        },
-        {
-            title: 'Pizzas',
-            url: 'http://placekitten.com/g/200/300',
-            checked: true
-        },
-        {
-            title: 'Drinks',
-            url: 'http://placekitten.com/g/200/300',
-            checked: true
-        },
-        {
-            title: 'Deserts',
-            url: 'http://placekitten.com/g/200/300',
-            checked: true
-        });
-
-    const [checkBoxArray, setCheckBoxArray] = useState(menu)
+    const getData = (json: any): Array<SymptomsModel> => {
+        var title: Array<SymptomsModel> = json.data
+        return title;
+    }
 
     return (
         <IonList>
-            {checkBoxArray.map((image, i) => (
+            {getData(data).map((item, i) => (
                 <IonItem>
-                    <IonCheckbox slot="start" value={data} checked={image.checked} className="ion-checkbox radiology" />
-                    <IonLabel>{image.title}</IonLabel>
+                    <IonIcon icon={checkmark} color="accordanceheading" className="sendpatient-radiology-image" />
+                    <IonLabel className="ion-padding">{item.data}</IonLabel>
                 </IonItem>
             ))}
         </IonList>

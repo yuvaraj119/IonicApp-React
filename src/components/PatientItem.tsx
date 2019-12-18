@@ -19,7 +19,7 @@ const PatientItem: React.FC<PatientItemProps> = ({ patient, onPressCallBack }) =
             </IonCol>
             <IonCol size="6" size-sm className={["ion-text-center", "patient-list-item", "code-list-item-name"].join(" ")}>
                 <IonButton onClick={() => onPressCallBack(patient.id)} expand="block" fill="clear" className="text-button">
-                    <IonIcon className={(patient.code == "Red") ? "ion-radio-button-red" : "ion-radio-button-green"} />
+                    <IonIcon className={(patient.code === "Red") ? "ion-radio-button-red" : "ion-radio-button-green"} />
                     {/* <IonAvatar className="item-avatar" slot="start">
                         <img src={process.env.PUBLIC_URL + patient.profilePic} alt="Speaker profile pic" />
                     </IonAvatar> */}

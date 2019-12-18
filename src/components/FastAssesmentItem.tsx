@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { IonRow, IonCol, IonLabel, IonList } from '@ionic/react';
 import './PatientItem.css';
 import { FastAssessmentModel } from '../models/FastAssessmentModel';

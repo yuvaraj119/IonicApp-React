@@ -1,6 +1,7 @@
 import React from 'react';
-import { IonLabel, IonItem, IonCardSubtitle, IonList, IonButton } from '@ionic/react';
+import { IonLabel, IonItem, IonCardSubtitle, IonList, IonButton, IonRow, IonCol } from '@ionic/react';
 import { SymptomsModel } from '../models/SymptomsModel';
+import './PatientItem.css';
 
 
 interface SymptomsProps {
@@ -29,23 +30,29 @@ const Symptoms: React.FC<SymptomsProps> = ({ data, vitalsign, patientTransferTim
 
     return (
         <IonItem lines='none'>
-            <IonList>
+            <IonList className="content-with-full-width">
                 {
                     getData(data).map(item => (
                         <IonLabel className={["ion-padding", "ion-text-wrap"].join(" ")}>{item.data}</IonLabel>
                     ))
                 }
                 {patientTransferTime &&
-                    <IonItem lines="none" slot="end">
-                        <IonButton className="rankingscale-button-text" slot="end" size="small" fill="clear" color="accordanceheading">
-                            Request patient transfer to neuro
-                        </IonButton>
-                    </IonItem>
+                    <IonRow>
+                        <IonCol size="6" size-sm></IonCol>
+                        <IonCol size="6" size-sm className={["ion-text-right"].join(" ")}>
+                            <IonButton className="rankingscale-button-text" size="small" fill="clear" color="accordanceheading">
+                                Request patient transfer to neuro
+                         </IonButton>
+                        </IonCol>
+                    </IonRow>
                 }
                 {vitalsign &&
-                    <IonItem lines="none" slot="end">
-                        <IonCardSubtitle slot="end" color="accordancecardtime" className="accordian-card-time">Time 12:15 Am</IonCardSubtitle>
-                    </IonItem>
+                    <IonRow>
+                        <IonCol size="6" size-sm></IonCol>
+                        <IonCol size="6" size-sm className={["ion-text-right"].join(" ")}>
+                            <IonCardSubtitle color="accordancecardtime" className="accordian-card-time">Time 12:15 Am</IonCardSubtitle>
+                        </IonCol>
+                    </IonRow>
                 }
             </IonList>
         </IonItem>
