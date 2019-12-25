@@ -17,7 +17,7 @@ const FastAssesmentItem: React.FC<FastAssesmentItemProps> = ({ data }) => {
     }
 
     return (
-        <IonList>
+        <IonList className="fast-assessment-list">
             {getData(data).map(item => (
                 <IonRow>
                     <IonCol size="6" size-sm className={["ion-text-left", "fast-assessment-col-left"].join(" ")}>

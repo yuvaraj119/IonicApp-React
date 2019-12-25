@@ -1,12 +1,14 @@
 import React from 'react';
-import { IonContent, IonList, IonGrid, IonRow, IonCol, IonPage, IonLabel, IonHeader, IonToolbar, IonButtons, IonBackButton } from '@ionic/react';
+import { IonContent, IonList, IonGrid, IonRow, IonCol, IonPage, IonLabel, IonHeader, IonToolbar, IonButtons, IonIcon, IonButton } from '@ionic/react';
 import { Speaker } from '../models/Speaker';
 import { connect } from '../data/connect';
+import { RouteComponentProps } from 'react-router';
 import * as selectors from '../data/selectors';
 import './Details.css';
 import Accordian from '../components/Accordion';
+import { arrowBack } from 'ionicons/icons';
 
-interface OwnProps { };
+interface OwnProps extends RouteComponentProps { };
 
 interface StateProps {
     patient?: Speaker;
@@ -16,8 +18,11 @@ interface DispatchProps { };
 
 interface PatientDetailsProps extends OwnProps, StateProps, DispatchProps { };
 
-const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
+const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ history, patient }) => {
 
+    let goBack = () => {
+        history.goBack();
+    }
 
     if (!patient) {
         return <div>Patient details not found</div>
@@ -27,7 +32,9 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
             <IonHeader>
                 <IonToolbar>
                     <IonButtons slot="start">
-                        <IonBackButton defaultHref="/homepage"></IonBackButton>
+                        <IonButton onClick={() => goBack()}>
+                            <IonIcon slot="icon-only" icon={arrowBack} />
+                        </IonButton>
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
@@ -50,7 +57,7 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
                         </IonCol>
                     </IonRow>
                 </IonGrid>
-                <IonList>
+                <IonList className="patient-list">
                     {patient.patientInfo.map(item => (
                         <Accordian
                             data={item} />
@@ -61,9 +68,9 @@ const PatientDetailsPage: React.FC<PatientDetailsProps> = ({ patient }) => {
     );
 };
 
-export default connect({
+export default connect<OwnProps, StateProps, DispatchProps>({
     mapStateToProps: (state, ownProps) => ({
         patient: selectors.getSpeaker(state, ownProps),
     }),
-    component: React.memo(PatientDetailsPage)
+    component: PatientDetailsPage
 });

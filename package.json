@@ -4,7 +4,7 @@
     "private": true,
     "dependencies": {
         "@capacitor/android": "^1.4.0",
-        "@capacitor/core": "1.4.0",
+        "@capacitor/core": "^1.4.0",
         "@capacitor/ios": "^1.4.0",
         "@ionic/core": "^4.11.7",
         "@ionic/react": "^4.11.0",
@@ -48,7 +48,7 @@
     },
     "description": "An Ionic project",
     "devDependencies": {
-        "@capacitor/cli": "1.4.0",
+        "@capacitor/cli": "^1.4.0",
         "@testing-library/react": "^9.3.1",
         "typescript": "3.6.3"
     }

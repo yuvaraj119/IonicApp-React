@@ -1,3 +1,10 @@
 .patient-details-name-text-bold {
     font-weight: 700;
 }
+
+.patient-list {
+    padding-left: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+}

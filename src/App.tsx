@@ -69,9 +69,9 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, sessions, setIsLoggedIn,
         <IonApp className={`${darkMode ? 'dark-theme' : 'dark-theme'}`}>
           <IonReactRouter>
             <IonRouterOutlet id="main">
-              <Route path="/homepage" component={Home} />
-              <Route path="/doctordetailspage" component={DoctorDetailsPage} />
-              <Route path="/patientdetailspage/:id" component={PatientDetailsPage} />
+              <Route path="/homepage" component={Home} exact={true} />
+              <Route path="/doctordetailspage" component={DoctorDetailsPage} exact={true} />
+              <Route path="/patientdetailspage/:id" component={PatientDetailsPage} exact={true} />
               <Route exact path="/" render={() => <Redirect to="/homepage" />} />
             </IonRouterOutlet>
           </IonReactRouter>
@@ -79,17 +79,6 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, sessions, setIsLoggedIn,
       )
   )
 }
-
-// const App: React.FC = () => (
-//   <IonApp>
-//     <IonReactRouter>
-//       <IonRouterOutlet>
-//         <Route path="/home" component={Home} exact={true} />
-//         <Route exact path="/" render={() => <Redirect to="/home" />} />
-//       </IonRouterOutlet>
-//     </IonReactRouter>
-//   </IonApp>
-// );
 
 export default App;
 

@@ -1,10 +1,11 @@
 import React from 'react';
-import { IonHeader, IonToolbar, IonContent, IonPage, IonButtons, IonBackButton, IonList, IonGrid, IonRow, IonCol, IonItem, IonLabel, IonToggle } from '@ionic/react';
+import { IonHeader, IonToolbar, IonContent, IonPage, IonButtons, IonButton, IonIcon, IonList, IonGrid, IonRow, IonCol, IonItem, IonLabel, IonToggle } from '@ionic/react';
 import { Speaker } from '../models/Speaker';
 import { connect } from '../data/connect';
 import { RouteComponentProps } from 'react-router';
 import * as selectors from '../data/selectors';
 import PatientItem from '../components/PatientItem';
+import { arrowBack } from 'ionicons/icons';
 
 interface OwnProps extends RouteComponentProps { };
 
@@ -18,6 +19,10 @@ interface DoctorDetailsProps extends OwnProps, StateProps, DispatchProps { };
 
 const DoctorDetailsPage: React.FC<DoctorDetailsProps> = ({ history, patients }) => {
 
+  let goBack = () => {
+    history.goBack();
+  }
+
   var moveToAnotherScreen = (patientId: number): void => {
     history.push(`/patientdetailspage/${patientId}`)
   }
@@ -27,7 +32,9 @@ const DoctorDetailsPage: React.FC<DoctorDetailsProps> = ({ history, patients }) 
       <IonHeader>
         <IonToolbar>
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/homepage"></IonBackButton>
+            <IonButton onClick={() => goBack()}>
+              <IonIcon slot="icon-only" icon={arrowBack} />
+            </IonButton>
           </IonButtons>
         </IonToolbar>
       </IonHeader>

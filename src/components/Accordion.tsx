@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonLabel, IonItem, IonIcon, IonCard, IonCardSubtitle } from '@ionic/react';
+import { IonLabel, IonItem, IonIcon, IonCard, IonText, IonCardContent } from '@ionic/react';
 import { arrowDropdownCircle, arrowDropupCircle } from 'ionicons/icons';
 import Symptoms from './Symptoms';
 import RegionAffectedItem from './RegionAffectedItem';
@@ -46,16 +46,18 @@ const Accordian: React.FC<AccordianProps> = ({ data }) => {
     }
 
     return (
-        <IonCard className="accordian-card">
-            <IonCardSubtitle color="accordancecardtime" className="accordian-card-time">12:15 Am</IonCardSubtitle>
-            <IonItem color="accordanceheadingbg" onClick={() => toggleExpand()} lines='none'>
-                <IonLabel color="accordanceheading">{getType(data)}</IonLabel>
-                <IonIcon icon={expanded ? arrowDropupCircle : arrowDropdownCircle} color="accordanceheading" />
-            </IonItem>
-            {
-                expanded && getView(data)
-            }
-        </IonCard>
+        <IonCardContent id="cd-timeline" className="cd-timeline">
+            <IonText color="accordancecardtime" className="cd-timeline-picture">{"12:15 am"}</IonText>
+            <IonCard className="cd-timeline-content">
+                <IonItem color="accordanceheadingbg" onClick={() => toggleExpand()} lines='none'>
+                    <IonLabel color="accordanceheading">{getType(data)}</IonLabel>
+                    <IonIcon icon={expanded ? arrowDropupCircle : arrowDropdownCircle} color="accordanceheading" />
+                </IonItem>
+                {
+                    expanded && getView(data)
+                }
+            </IonCard>
+        </IonCardContent>
     );
 };
 

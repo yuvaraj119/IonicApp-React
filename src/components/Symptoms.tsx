@@ -29,7 +29,7 @@ const Symptoms: React.FC<SymptomsProps> = ({ data, vitalsign, patientTransferTim
     }
 
     return (
-        <IonItem lines='none'>
+        <IonItem lines='none' className="symptoms-content">
             <IonList className="content-with-full-width">
                 {
                     getData(data).map(item => (
@@ -38,19 +38,17 @@ const Symptoms: React.FC<SymptomsProps> = ({ data, vitalsign, patientTransferTim
                 }
                 {patientTransferTime &&
                     <IonRow>
-                        <IonCol size="6" size-sm></IonCol>
-                        <IonCol size="6" size-sm className={["ion-text-right"].join(" ")}>
-                            <IonButton className="rankingscale-button-text" size="small" fill="clear" color="accordanceheading">
-                                Request patient transfer to neuro
+                        <IonCol size="12" size-sm className={["ion-text-right"].join(" ")}>
+                            <IonButton className={["rankingscale-button-text","vital-card-time"].join(" ")} size="small" fill="clear" color="accordanceheading">
+                                Request patient transfer to neuro OR
                          </IonButton>
                         </IonCol>
                     </IonRow>
                 }
                 {vitalsign &&
                     <IonRow>
-                        <IonCol size="6" size-sm></IonCol>
-                        <IonCol size="6" size-sm className={["ion-text-right"].join(" ")}>
-                            <IonCardSubtitle color="accordancecardtime" className="accordian-card-time">Time 12:15 Am</IonCardSubtitle>
+                        <IonCol size="12" size-sm className={["ion-text-right"].join(" ")}>
+                            <IonCardSubtitle color="accordancecardtime" className="vital-card-time">Time 12:15 Am</IonCardSubtitle>
                         </IonCol>
                     </IonRow>
                 }
