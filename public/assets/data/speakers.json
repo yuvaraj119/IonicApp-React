@@ -11,83 +11,95 @@
         "phone": "+1-541-754-3010",
         "code": "Red",
         "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
+                "type": "Current Patient Status",
+                "data": [
+                    "Same as reported,motionless,able to sit,lyinh down,unconscious"
                 ]
+            },
+            {
+                "type": "Stroke Clock",
+                "time": "00:12:23",
+                "nuronal_loss": "0.45 Millions"
             },
             {
                 "type": "Region Affected",
                 "data": [{
                     "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
                 }]
-            }, {
+            },
+            {
                 "type": "Fast Assessment",
                 "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
+                        "title": "FASE",
+                        "question": "Ask the person to smile. Does one side of the face drop?",
+                        "answer": "Yes",
+                        "side": "Left"
                     },
                     {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
+                        "title": "ARM",
+                        "question": "Ask person to raise both arms. Does one arm drift downwards?",
+                        "answer": "No",
+                        "side": "-"
                     },
                     {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
+                        "title": "SPEECH",
+                        "question": "Ask person to repeat a simple phrase. Is the speech slurred?",
+                        "answer": "Yes",
+                        "side": "Right"
                     }
                 ]
             },
             {
-                "type": "NIHSS",
+                "type": "NIH Stroke Scale",
                 "data": "NIHS Score: 17",
                 "score": "20"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
+            },
+            {
+                "type": "Patient History",
+                "symptoms": [{
+                        "title": "Complete Paralysis of one side",
+                        "data": "Confusion"
                     },
                     {
-                        "data": "Left diastolic blood pressure"
+                        "title": "Bluring of visior",
+                        "data": "Difficulty in swallowing"
                     },
                     {
-                        "data": "Right systonic blood pressure"
+                        "title": "Severe Headache",
+                        "data": "Sudden loss of vision"
                     },
                     {
-                        "data": "Right diastolic blood pressure"
+                        "title": "Dizziness",
+                        "data": "Dizziness"
                     }
                 ]
-            }, {
+            },
+            {
+                "type": "Vital Signs",
+                "blood_pressure": {
+                    "title": "Blood Presure(mm Hg)",
+                    "left": {
+                        "title": "Left",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "right": {
+                        "title": "Right",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "pulse": {
+                        "title": "Pulse",
+                        "rate": "rate",
+                        "rhythm": "AF"
+                    }
+                },
+                "respiratory_rate": {
+                    "title": "Respiratory Rate",
+                    "data": "98.45"
+                }
+            },
+            {
                 "type": "Patient Image",
                 "data": [{
                         "title": "Sever Pain in Head",
@@ -102,10 +114,12 @@
                         "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Ranking Scale",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Send Patient to Radiology",
                 "data": [{
                         "data": "Request CT"
@@ -114,10 +128,12 @@
                         "data": "Request MRI"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Request Lab Test Results",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Patient Tranfer Timeline",
                 "data": [{
                         "data": "Patient Transfer Initiated : 10:20 AM"
@@ -142,83 +158,95 @@
         "email": "charlie@example.com",
         "phone": "+1-541-754-3010",
         "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
+                "type": "Current Patient Status",
+                "data": [
+                    "Same as reported,motionless,able to sit,lyinh down,unconscious"
                 ]
+            },
+            {
+                "type": "Stroke Clock",
+                "time": "00:12:23",
+                "nuronal_loss": "0.45 Millions"
             },
             {
                 "type": "Region Affected",
                 "data": [{
                     "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
                 }]
-            }, {
+            },
+            {
                 "type": "Fast Assessment",
                 "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
+                        "title": "FASE",
+                        "question": "Ask the person to smile. Does one side of the face drop?",
+                        "answer": "Yes",
+                        "side": "Left"
                     },
                     {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
+                        "title": "ARM",
+                        "question": "Ask person to raise both arms. Does one arm drift downwards?",
+                        "answer": "No",
+                        "side": "-"
                     },
                     {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
+                        "title": "SPEECH",
+                        "question": "Ask person to repeat a simple phrase. Is the speech slurred?",
+                        "answer": "Yes",
+                        "side": "Right"
                     }
                 ]
             },
             {
-                "type": "NIHSS",
+                "type": "NIH Stroke Scale",
                 "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
+                "score": "20"
+            },
+            {
+                "type": "Patient History",
+                "symptoms": [{
+                        "title": "Complete Paralysis of one side",
+                        "data": "Confusion"
                     },
                     {
-                        "data": "Left diastolic blood pressure"
+                        "title": "Bluring of visior",
+                        "data": "Difficulty in swallowing"
                     },
                     {
-                        "data": "Right systonic blood pressure"
+                        "title": "Severe Headache",
+                        "data": "Sudden loss of vision"
                     },
                     {
-                        "data": "Right diastolic blood pressure"
+                        "title": "Dizziness",
+                        "data": "Dizziness"
                     }
                 ]
-            }, {
+            },
+            {
+                "type": "Vital Signs",
+                "blood_pressure": {
+                    "title": "Blood Presure(mm Hg)",
+                    "left": {
+                        "title": "Left",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "right": {
+                        "title": "Right",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "pulse": {
+                        "title": "Pulse",
+                        "rate": "rate",
+                        "rhythm": "AF"
+                    }
+                },
+                "respiratory_rate": {
+                    "title": "Respiratory Rate",
+                    "data": "98.45"
+                }
+            },
+            {
                 "type": "Patient Image",
                 "data": [{
                         "title": "Sever Pain in Head",
@@ -233,10 +261,12 @@
                         "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Ranking Scale",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Send Patient to Radiology",
                 "data": [{
                         "data": "Request CT"
@@ -245,10 +275,12 @@
                         "data": "Request MRI"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Request Lab Test Results",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Patient Tranfer Timeline",
                 "data": [{
                         "data": "Patient Transfer Initiated : 10:20 AM"
@@ -273,83 +305,95 @@
         "email": "donald@example.com",
         "phone": "+1-541-754-3010",
         "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
+                "type": "Current Patient Status",
+                "data": [
+                    "Same as reported,motionless,able to sit,lyinh down,unconscious"
                 ]
+            },
+            {
+                "type": "Stroke Clock",
+                "time": "00:12:23",
+                "nuronal_loss": "0.45 Millions"
             },
             {
                 "type": "Region Affected",
                 "data": [{
                     "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
                 }]
-            }, {
+            },
+            {
                 "type": "Fast Assessment",
                 "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
+                        "title": "FASE",
+                        "question": "Ask the person to smile. Does one side of the face drop?",
+                        "answer": "Yes",
+                        "side": "Left"
                     },
                     {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
+                        "title": "ARM",
+                        "question": "Ask person to raise both arms. Does one arm drift downwards?",
+                        "answer": "No",
+                        "side": "-"
                     },
                     {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
+                        "title": "SPEECH",
+                        "question": "Ask person to repeat a simple phrase. Is the speech slurred?",
+                        "answer": "Yes",
+                        "side": "Right"
                     }
                 ]
             },
             {
-                "type": "NIHSS",
+                "type": "NIH Stroke Scale",
                 "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
+                "score": "20"
+            },
+            {
+                "type": "Patient History",
+                "symptoms": [{
+                        "title": "Complete Paralysis of one side",
+                        "data": "Confusion"
                     },
                     {
-                        "data": "Left diastolic blood pressure"
+                        "title": "Bluring of visior",
+                        "data": "Difficulty in swallowing"
                     },
                     {
-                        "data": "Right systonic blood pressure"
+                        "title": "Severe Headache",
+                        "data": "Sudden loss of vision"
                     },
                     {
-                        "data": "Right diastolic blood pressure"
+                        "title": "Dizziness",
+                        "data": "Dizziness"
                     }
                 ]
-            }, {
+            },
+            {
+                "type": "Vital Signs",
+                "blood_pressure": {
+                    "title": "Blood Presure(mm Hg)",
+                    "left": {
+                        "title": "Left",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "right": {
+                        "title": "Right",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "pulse": {
+                        "title": "Pulse",
+                        "rate": "rate",
+                        "rhythm": "AF"
+                    }
+                },
+                "respiratory_rate": {
+                    "title": "Respiratory Rate",
+                    "data": "98.45"
+                }
+            },
+            {
                 "type": "Patient Image",
                 "data": [{
                         "title": "Sever Pain in Head",
@@ -364,10 +408,12 @@
                         "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Ranking Scale",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Send Patient to Radiology",
                 "data": [{
                         "data": "Request CT"
@@ -376,10 +422,12 @@
                         "data": "Request MRI"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Request Lab Test Results",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Patient Tranfer Timeline",
                 "data": [{
                         "data": "Patient Transfer Initiated : 10:20 AM"
@@ -404,83 +452,95 @@
         "email": "eva@example.com",
         "phone": "+1-541-754-3010",
         "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
+                "type": "Current Patient Status",
+                "data": [
+                    "Same as reported,motionless,able to sit,lyinh down,unconscious"
                 ]
+            },
+            {
+                "type": "Stroke Clock",
+                "time": "00:12:23",
+                "nuronal_loss": "0.45 Millions"
             },
             {
                 "type": "Region Affected",
                 "data": [{
                     "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
                 }]
-            }, {
+            },
+            {
                 "type": "Fast Assessment",
                 "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
+                        "title": "FASE",
+                        "question": "Ask the person to smile. Does one side of the face drop?",
+                        "answer": "Yes",
+                        "side": "Left"
                     },
                     {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
+                        "title": "ARM",
+                        "question": "Ask person to raise both arms. Does one arm drift downwards?",
+                        "answer": "No",
+                        "side": "-"
                     },
                     {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
+                        "title": "SPEECH",
+                        "question": "Ask person to repeat a simple phrase. Is the speech slurred?",
+                        "answer": "Yes",
+                        "side": "Right"
                     }
                 ]
             },
             {
-                "type": "NIHSS",
+                "type": "NIH Stroke Scale",
                 "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
+                "score": "20"
+            },
+            {
+                "type": "Patient History",
+                "symptoms": [{
+                        "title": "Complete Paralysis of one side",
+                        "data": "Confusion"
                     },
                     {
-                        "data": "Left diastolic blood pressure"
+                        "title": "Bluring of visior",
+                        "data": "Difficulty in swallowing"
                     },
                     {
-                        "data": "Right systonic blood pressure"
+                        "title": "Severe Headache",
+                        "data": "Sudden loss of vision"
                     },
                     {
-                        "data": "Right diastolic blood pressure"
+                        "title": "Dizziness",
+                        "data": "Dizziness"
                     }
                 ]
-            }, {
+            },
+            {
+                "type": "Vital Signs",
+                "blood_pressure": {
+                    "title": "Blood Presure(mm Hg)",
+                    "left": {
+                        "title": "Left",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "right": {
+                        "title": "Right",
+                        "systoli": "systoli",
+                        "diastolic": "diastolic"
+                    },
+                    "pulse": {
+                        "title": "Pulse",
+                        "rate": "rate",
+                        "rhythm": "AF"
+                    }
+                },
+                "respiratory_rate": {
+                    "title": "Respiratory Rate",
+                    "data": "98.45"
+                }
+            },
+            {
                 "type": "Patient Image",
                 "data": [{
                         "title": "Sever Pain in Head",
@@ -495,10 +555,12 @@
                         "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Ranking Scale",
                 "data": []
-            }, {
+            },
+            {
                 "type": "Send Patient to Radiology",
                 "data": [{
                         "data": "Request CT"
@@ -507,796 +569,12 @@
                         "data": "Request MRI"
                     }
                 ]
-            }, {
+            },
+            {
                 "type": "Request Lab Test Results",
                 "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "Ellie Rahana",
-        "code": "Green",
-        "sex": "Female",
-        "age": 37,
-        "profilePic": "/assets/img/speakers/elephant.jpg",
-        "twitter": "ionicframework",
-        "about": "Ellie is an Elephant.",
-        "location": "Everywhere",
-        "email": "ellie@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
             },
             {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Gino",
-        "code": "Red",
-        "sex": "Male",
-        "age": 57,
-        "profilePic": "/assets/img/speakers/giraffe.jpg",
-        "twitter": "ionicframework",
-        "about": "Gino is a Giraffe.",
-        "location": "Everywhere",
-        "email": "gino@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
-            },
-            {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "name": "Isabella",
-        "code": "Red",
-        "sex": "Female",
-        "age": 22,
-        "profilePic": "/assets/img/speakers/iguana.jpg",
-        "twitter": "ionicframework",
-        "about": "Isabella is an Iguana.",
-        "location": "Everywhere",
-        "email": "isabella@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
-            },
-            {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "name": "Karli",
-        "code": "Green",
-        "sex": "Male",
-        "age": 47,
-        "profilePic": "/assets/img/speakers/kitten.jpg",
-        "twitter": "ionicframework",
-        "about": "Karl is a Kitten.",
-        "location": "Everywhere",
-        "email": "karl@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
-            },
-            {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "name": "Lionel Messi",
-        "code": "Red",
-        "sex": "Male",
-        "age": 37,
-        "profilePic": "/assets/img/speakers/lion.jpg",
-        "twitter": "ionicframework",
-        "about": "Lionel is a Lion.",
-        "location": "Everywhere",
-        "email": "lionel@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
-            },
-            {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
-                "type": "Patient Tranfer Timeline",
-                "data": [{
-                        "data": "Patient Transfer Initiated : 10:20 AM"
-                    },
-                    {
-                        "data": "Patient Transfer to OR 8 : 10:30 AM"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "name": "Molly Sophia",
-        "code": "Red",
-        "sex": "Male",
-        "age": 27,
-        "profilePic": "/assets/img/speakers/mouse.jpg",
-        "twitter": "ionicframework",
-        "about": "Molly is a Mouse.",
-        "location": "Everywhere",
-        "email": "molly@example.com",
-        "phone": "+1-541-754-3010",
-        "patientInfo": [{
-                "type": "Symptoms",
-                "data": [{
-                        "data": "Complete Paralysis of one side"
-                    },
-                    {
-                        "data": "Confusion"
-                    },
-                    {
-                        "data": "Bluring of visior"
-                    }
-                ]
-            },
-            {
-                "type": "Region Affected",
-                "data": [{
-                    "picture": "https://www.coloringsky.com/wp-content/uploads/2015/11/Human-Body-Outline-Drawing-Coloring-Pages.jpg"
-                }]
-            }, {
-                "type": "Fast Assessment",
-                "data": [{
-                        "title": "Facial Movement",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "Arm Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Leg Monitor Function",
-                        "data": "Falls"
-                    },
-                    {
-                        "title": "Speech",
-                        "data": "Minor"
-                    },
-                    {
-                        "title": "In Attention",
-                        "data": "Mild"
-                    },
-                    {
-                        "title": "Gaze",
-                        "data": "Partial"
-                    },
-                    {
-                        "title": "Sensory Loss",
-                        "data": "Patial"
-                    },
-                    {
-                        "title": "Orientation Question - 2",
-                        "data": "1 Answers"
-                    },
-                    {
-                        "title": "Response to commands",
-                        "data": "1 Response"
-                    }
-                ]
-            },
-            {
-                "type": "NIHSS",
-                "data": "NIHS Score: 17",
-                "score": "17"
-            }, {
-                "type": "Vital Signs",
-                "data": [{
-                        "data": "Left systonic blood pressure"
-                    },
-                    {
-                        "data": "Left diastolic blood pressure"
-                    },
-                    {
-                        "data": "Right systonic blood pressure"
-                    },
-                    {
-                        "data": "Right diastolic blood pressure"
-                    }
-                ]
-            }, {
-                "type": "Patient Image",
-                "data": [{
-                        "title": "Sever Pain in Head",
-                        "url": "https://cdn6.aptoide.com/imgs/4/6/5/465cc477145a3ce7e1fe9a40c182dfaf_icon.png?w=256"
-                    },
-                    {
-                        "title": "Sever Paing in Neck",
-                        "url": "https://fitbytandem.files.wordpress.com/2018/07/anatomy-of-neck-pain.jpg?w=256&h=256"
-                    },
-                    {
-                        "title": "Back Pain",
-                        "url": "https://pbs.twimg.com/profile_images/737364662023491585/PqaeZv41_400x400.jpg"
-                    }
-                ]
-            }, {
-                "type": "Ranking Scale",
-                "data": []
-            }, {
-                "type": "Send Patient to Radiology",
-                "data": [{
-                        "data": "Request CT"
-                    },
-                    {
-                        "data": "Request MRI"
-                    }
-                ]
-            }, {
-                "type": "Request Lab Test Results",
-                "data": []
-            }, {
                 "type": "Patient Tranfer Timeline",
                 "data": [{
                         "data": "Patient Transfer Initiated : 10:20 AM"

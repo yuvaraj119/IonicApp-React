@@ -96,27 +96,6 @@
     height: 300px;
 }
 
-.fast-assessment-list {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.fast-assessment-col-left {
-    background-color: var(--ion-color-fastassesmentitem);
-}
-
-.fast-assessment-col-right {
-    background-color: black;
-}
-
-.ion-text-left.fast-assessment-col-left.md.hydrated {
-    color: white;
-}
-
-.ion-text-left.fast-assessment-col-right.md.hydrated {
-    color: white;
-}
-
 .rankingscale-button-text {
     text-transform: none;
 }
@@ -174,4 +153,127 @@
 
 .ion-text-right {
     padding-right: 0px;
+}
+
+.current-patient-status {
+    border-color: var(--ion-color-accordanceheading);
+    border-style: solid;
+    border-width: 2px;
+    background-color: #afb2af;
+}
+
+.stroke-list {
+    width: 100%;
+}
+
+.stroke-list-time {
+    font-weight: 700;
+}
+
+.fast-assessment-new-list {
+    box-shadow: none !important;
+    border-radius: 0%;
+    color: white;
+}
+
+.fast-assessment-list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.fast-assessment-list-label {
+    font-weight: bold;
+}
+
+.fast-assessment-list-row {
+    background-color: var(--ion-color-fastassesmentitem);
+}
+
+.square {
+    height: 80px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1px;
+    border-color: black;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    justify-items: center;
+}
+
+.square-content {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: 5px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.fast-assessment-col-left {
+    background-color: var(--ion-color-fastassesmentitem);
+}
+
+.fast-assessment-col-right {
+    background-color: black;
+}
+
+
+/* .ion-text-left.fast-assessment-col-left.md.hydrated {
+    color: white;
+}
+
+.ion-text-left.fast-assessment-col-right.md.hydrated {
+    color: white;
+} */
+
+.patient-history-card {
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0;
+}
+
+.patient-history-label {
+    color: white;
+}
+
+.patient-history-border {
+    display: flex;
+    border-color: var(--ion-color-accordanceheading);
+    border-width: 1px;
+    border-style: solid;
+    background-color: #eae8e7;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.patient-history-col-left {
+    background-color: var(--ion-color-fastassesmentitem);
+    width: fit-content;
+}
+
+.patient-history-col-right {
+    background-color: black;
+}
+
+.fast-text-size {
+    font-size: 10px;
+}
+
+.vitalsigns-label-heading {
+    color: white;
+    font-weight: bold;
+}
+
+.vitalsigns-label-title {
+    color: white;
 }

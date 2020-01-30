@@ -1,4 +1,4 @@
-export interface FastAssessmentModel {
+export interface VitalSignsModels {
     title: string;
     question: string;
     answer: string;
